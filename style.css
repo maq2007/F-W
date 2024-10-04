@@ -1,0 +1,206 @@
+*{
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Arial',sans-serif; */
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* .navbar{
+    background-color:rgb(15, 22, 17) ;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: rgb(233, 204, 75);
+    width: 24%;
+    display: inline-block;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+} */
+.button{
+    background-color: black;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-content: space-around;
+    width: 100%; 
+    box-shadow: 0 0 10px black;
+}
+.button a{
+    text-decoration: none;
+    padding: 2px 5px;
+    margin: 0 70px;
+    position: relative;
+    color: wheat;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    width: 12%;
+    display:inline-block;
+    flex-direction: column;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    /* float: right 20px; */
+    justify-content: space-around;
+    transition: background-color 0.3s;
+    overflow: hidden;
+    /* webkit-box-reflect:below 1px lineargradient(transparent,#0003); */
+}
+/* a:nth-child(1){
+    filter: hue-rotate(115deg);
+}
+a:nth-child(3){
+    filter: hue-rotate(270deg);
+} */
+/* a:hover{
+    background-color: #21ebff;
+    color: white;
+    box-shadow: 0 0 50px #21ebff;
+    transition-delay: 0.5s;
+
+} */
+a::before{
+    transition-delay: 0.5s;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid wheat;
+    border-left: 2px solid wheat;
+    transition: 0.5s; 
+}
+a:hover:before{
+    width: 100%;
+    height: 100%;
+    transition-delay: 0.s;
+
+}
+a::after{
+    transition-delay: 0.5s;
+
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid wheat;
+    border-right: 2px solid wheat;
+    transition: 0.5s; 
+}
+a:hover:after{
+    width: 100%;
+    height: 100%;
+    transition-delay: 0.s;
+
+}
+
+.banner{
+    text-align: center;
+    margin: auto;
+    color: wheat;
+    background-image: url('./img/bg.jpg');
+    background-repeat: no-repeat;
+    padding-top: 180px;
+    padding-bottom: 320px;
+    background-size: 100% 100%;
+    background-position: center;
+    text-transform: uppercase;
+    font-size: 30px;
+} 
+.banner h2{
+    margin: 20px;
+}
+.btn{
+    background-color: black;
+    display: inline-block;
+    /* width: 20px;
+    height: 20px; */
+    box-shadow: 0 0 10px rgb(44, 43, 43);
+    font-size: 12px;
+    /* padding: 20px; */
+    font-weight: bold;
+    border-radius: 40px;
+    padding: 20px;
+    margin: 0 5px;
+    vertical-align: middle;
+}
+.btn:hover{
+    transition: background-color 0.3s;
+    font-size: 15px;
+    font-weight: bold;
+}
+.btn::before{
+    content: '';
+    transition-delay: 0.5s;
+    background-color: wheat;
+    transition: 0.5s;
+    color: black;
+
+}
+.btn:hover:before{
+    width: 100%;
+    height: 100%;
+    transition-delay: 0.s;
+    
+}
+.btn::after{
+    transition-delay: 0.5s;
+    background-color:wheat;
+    content: '';
+    color: black;
+    transition: 0.5s
+}
+.btn:hover::after{
+    width: 100%;
+    height: 100%;
+    transition-delay: 0.s;
+}
+.courses {
+    display: flex;
+    justify-content: space-around;
+    /* height: 50%; */
+    /* width: 30%; */
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.course {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    padding: 15px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.course h2 {
+    background-color: goldenrod;
+    padding: 10px;
+    border: 2px solid black;
+    /* margin-bottom: ; */
+    color: black;
+}
+
+.course img {
+    width: 100%;
+    height: 90%;
+}
+
+.course p {
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+

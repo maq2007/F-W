@@ -13,7 +13,7 @@ html, body{
     margin: 0;
 }
 main{
-    min-height: calc(450vh - 450px);
+    min-height: calc(500vh - 500px);
     margin-bottom: 40%;
     padding-top: 65px;
 }
@@ -192,11 +192,12 @@ section{
     display: flex;
     flex-direction: column;
     align-content: center;
-    height: 300px;
+    height: 400px;
 }
 .courses {
     display: flex;
     justify-content: space-around;
+    
     /* height: 50%; */
     /* width: 30%; */
     padding: 20px;
@@ -207,11 +208,15 @@ section{
 .course {
     background-color: #fff;
     /* border: 2px solid #ccc; */
-    padding: 15px;
+    padding: 35px 15px;
     width: 30%;
     text-align: center;
     margin: 0 70px;
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+.course:hover{
+    box-shadow:0 0px 5px rgba(0, 0, 0, 0.1) ;
+    border-radius: 20px;
 }
 
 .course h2 {
@@ -235,7 +240,7 @@ section{
 .course p {
     margin-top: 10px;
     font-size: small;
-    color: #2a3646;
+    color: #8fa4bd;
 }
 .container {
     display: flex;
@@ -243,10 +248,13 @@ section{
     background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
-    margin: 60px 0px 60px 80px;
+    margin: 60px 0px 60px 100px;
     gap: 30px;
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); */
     max-width: 1000px;
+}
+.container:hover {
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.8)
 }
 .container img {
     max-width: 300px;
@@ -277,14 +285,14 @@ section{
 .butto {
     text-decoration: none;
     padding: 10px 20px;
-    background-color: #8fa4bd;
+    background-color: #2a3646;
     color: #fff;
     border-radius: 5px;
     font-weight: bold;
     text-transform: uppercase;
 }
 .butto:hover {
-    background-color: #2a3646;
+    background-color: #8fa4bd;
 }
 
 footer{
